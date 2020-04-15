@@ -8,7 +8,7 @@ The way it works is simple:
 * The operator will open the KTP scanning application as normal, and scan the first barcode and entering the correct data on the traceability sheet
 * The operator will then open this application
 * Scan the First and Last barcodes in the strip
-* Click Submit and let it do its thing!
+* Click Submit and let it do its thing! (First barcode is ommited as it has already been scanned)
 
 # Possible Additions:
 * Add a total number of barcodes on the UI so the operator can double check
