@@ -5,7 +5,7 @@ This (very) simple application should reduce the errors in the process of scanni
 
 ## How to Use
 The way it works is simple:
-* The operator will open the KTP scanning application as normal, and scan the first barcode and entering the correct data on the tracibility sheet
+* The operator will open the KTP scanning application as normal, and scan the first barcode and entering the correct data on the traceability sheet
 * The operator will then open this application
 * Scan the First and Last barcodes in the strip
 * Click Submit and let it do its thing!
