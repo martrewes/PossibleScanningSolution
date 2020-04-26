@@ -5,12 +5,15 @@ This (very) simple application should reduce the errors in the process of scanni
 
 ## How to Use
 The way it works is simple:
-* The operator will open the KTP scanning application as normal, and scan the first barcode and entering the correct data on the traceability sheet
+* The operator will open the scanning application as normal, and scan the first barcode and entering the correct data on the traceability sheet
 * The operator will then open this application
 * Scan the First and Last barcodes in the strip
 * Click Submit and let it do its thing! The program will "scan" [type] each barcode and hit Enter. (First barcode is ommited as it has already been scanned)
 
 # Changelog
+
+## 26/04/2020 #2
+* The program will now find the window to scan into, instead of relying on Alt+Tab (will save a lot of confusion/error)
 
 ## 26/04/2020
 * Added a confirmation dialog that also contains total number of labels to "scan"
