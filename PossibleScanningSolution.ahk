@@ -20,7 +20,7 @@ Gui Show,x750 y700 w153 h196, Insert Serials
 Return
 
 ButtonHelp?: ;A general Help button
-MsgBox,,Help, Ensure you have scanned the 1st Barcode, and have filled in all of the required information for that KTP. Once complete, click on that window then immediately click on this one after. Scan your first and last serial number then click submit. The program will return to focus once it is complete.
+MsgBox,,Help, Ensure you have scanned the 1st Barcode, and have filled in all of the required information. Once complete, click on that window then immediately click on this one after. Scan your first and last serial number then click submit. The program will return to focus once it is complete.
 Return
 
 Button/\|\/:
