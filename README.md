@@ -10,9 +10,23 @@ The way it works is simple:
 * Scan the First and Last barcodes in the strip
 * Click Submit and let it do its thing! The program will "scan" [type] each barcode and hit Enter. (First barcode is ommited as it has already been scanned)
 
+# Changelog
+
+## 26/04/2020
+* Added a confirmation dialog that also contains total number of labels to "scan"
+
+![Confirm](UpdateConfirm.png)
+* Added a swap button to reverse the values if in wrong order
+
+![Interface](UpdateInterface.png)
+
+## 15/04/2020
+Initial development/upload
+
+
 # Possible Additions:
-* Add a total number of barcodes on the UI so the operator can double check
-* Find the actual scanning window's name so I don't have to rely on Alt+Tab
+- [x] Add a total number of barcodes on the UI so the operator can double check
+- [ ] Find the actual scanning window's name so I don't have to rely on Alt+Tab
 
 # Working Demo
 ![AppDemo](Demo.gif)
