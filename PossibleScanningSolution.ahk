@@ -20,7 +20,7 @@ Gui Show,x750 y700 w153 h196, Insert Serials
 Return
 
 ButtonHelp?: ;A general Help button
-MsgBox,,Help, Ensure you have scanned the 1st Barcode, and have filled in all of the required information. Once complete, click on that window then immediately click on this one after. Scan your first and last serial number then click submit. The program will return to focus once it is complete.
+MsgBox,,Help, Ensure you have scanned the 1st Barcode, and have filled in all of the required information for that KTP. Once complete, click on that window then immediately click on this one after. Scan your first and last serial number then click submit. The program will return to focus once it is complete.
 Return
 
 Button/\|\/:
@@ -36,6 +36,8 @@ Gui, Submit, NoHide
 ;Assign the variables
 intFirst = %First% 
 intLast = %Last%
+
+
 if (intFirst >= intLast) {    ;Catch any invalid input
     MsgBox ,,Error,Please ensure the serial numbers are the correct way around
     Return
@@ -50,14 +52,24 @@ else {
         Return
 
         intFirst++ ;The first barcode has already been scanned, so omit that one
-        Send, {ALT DOWN}{TAB}{ALT UP} ;Alt+Tab to the window
+        if WinExist("ahk_exe notepad.exe") ;Using notepad as example. Need to know the process name.
+        {
+        WinActivate, ahk_exe notepad.exe ;Activate that window (no alt+tab)
+
+        ;Send, {ALT DOWN}{TAB}{ALT UP} ;Alt+Tab to the window
         while (intFirst <= intLast){ ;Start the loop
         Sleep 100 ;Allow things to settle
         Send, %intFirst%{enter} ;Type the barcode number followed by *Enter*
         intFirst++ ;Add 1 to the barcode number
         Sleep, 200 ;Sleep for 1/5 Second just in case of unstability
+        }
 
+    }           
+    else {
+        MsgBox,,,Program not running
+        Return      
     }
+
     Send, {ALT DOWN}{TAB}{ALT UP} ;Alt+Tab back to the program window
     Return   
 }
