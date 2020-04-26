@@ -29,7 +29,7 @@ Initial development/upload
 
 # Possible Additions:
 - [x] Add a total number of barcodes on the UI so the operator can double check
-- [ ] Find the actual scanning window's name so I don't have to rely on Alt+Tab
+- [x] Find the actual scanning window's name so I don't have to rely on Alt+Tab
 
 # Working Demo
 ![AppDemo](Demo.gif)
