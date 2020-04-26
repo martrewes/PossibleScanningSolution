@@ -24,8 +24,7 @@ The way it works is simple:
 ![Interface](UpdateInterface.png)
 
 ## 15/04/2020
-Initial development/upload
-
+Initial development/upload and Demo
 
 # Possible Additions:
 - [x] Add a total number of barcodes on the UI so the operator can double check
